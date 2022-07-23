@@ -1,0 +1,50 @@
+<mat-card>
+  <mat-card-title>New Product</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Name"
+        [(ngModel)]="product.name"
+        name="name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Date of birth"
+        [(ngModel)]="product.datebirth"
+        name="datebirth"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Birth place"
+        [(ngModel)]="product.birthplace"
+        name="birthplace"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Gender"
+        [(ngModel)]="product.gender"
+        name="gender"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="ID card number"
+        [(ngModel)]="product.idcard"
+        name="idcard"
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createProduct()" color="primary">
+    Save
+  </button>
+
+  <button mat-raised-button (click)="cancel()">Cancel</button>
+</mat-card>

@@ -1,0 +1,55 @@
+<mat-card>
+  <mat-card-title>Delete product</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Name"
+        [value]="product.name"
+        name="name"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Date of birth"
+        [value]="product.datebirth"
+        name="datebirth"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Birth place"
+        [value]="product.birthplace"
+        name="birthplace"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Gender"
+        [value]="product.gender"
+        name="gender"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="ID card number"
+        [value]="product.idcard"
+        name="idcard"
+        disabled
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="deleteProduct()" color="warn">
+    Delete
+  </button>
+
+  <button mat-raised-button (click)="cancel()">Cancel</button>
+</mat-card>
