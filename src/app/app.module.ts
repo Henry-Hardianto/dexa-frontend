@@ -27,11 +27,11 @@ import { ProductRead2Component } from './components/product/product-read2/produc
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { RedDirective } from './directives/red.directive';
+// import { RedDirective } from './directives/red.directive';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
-import { ForDirective } from './directives/for.directive';
+// import { ForDirective } from './directives/for.directive';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { LoginComponent } from './login/login.component';
@@ -48,8 +48,8 @@ registerLocaleData(localePt);
     ProductCreateComponent,
     ProductReadComponent,
     ProductRead2Component,
-    RedDirective,
-    ForDirective,
+    // RedDirective,
+    // ForDirective,
     ProductUpdateComponent,
     ProductDeleteComponent,
     LoginComponent,
